@@ -1,0 +1,45 @@
+/*Tudo o que for body terá essa aparência*/
+body {
+  background-image: url("https://www.mmoschini.com.br/wp-content/uploads/2016/09/background.jpg");
+  /*x e Y. X sendo automático e Y sendo a viewport height*/
+  background-size: auto 100vh;
+  font-family: Helvetica;
+  height: 100vh;
+}
+
+/*Tudo o que for Link, terá essa aparência*/
+a{
+  color: #2D6DFF;
+  text-decoration: none;
+}
+
+/*Pseudo Classe. Sempre que eu apontar para este elemento, fará issso*/
+a:hover {
+  text-decoration: underline;
+}
+
+.menu{
+  background-color: #FFFEF9; 
+}
+/*Todos os li da classe menu serão assim...*/
+.menu li{
+  list-style: none;
+}
+
+/*Dispõe os elementos da Ul um do lado do outro*/
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Aplica o mesmo estilo para as duas classes*/
+.site-subtitle,
+.site-title{
+  color: #2D6DFF;
+  text-align: center;
+}
+
+/*Aplica estes estilos, mas SOMENTE para o site-subtitle*/
+.site-subtitle{
+  font-style: italic;
+}
